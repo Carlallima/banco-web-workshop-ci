@@ -32,8 +32,6 @@ jobs:
               run: npm run server &
 
             - name: Executar testes
-              run: npx cypress rub
+              run: npx cypress run
 
-            -name: Executar testes
-             run: npx cypress run
             
