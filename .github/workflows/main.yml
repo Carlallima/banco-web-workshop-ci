@@ -21,6 +21,7 @@ jobs:
             - name: Checkout do Repositorio
               uses: actions/checkout@v4
 
+              #[deps do projeto] (node/npm, java/malven,gradle,pyton/pip ...)
             - name: Instalando as dependencias
               run: npm install
 
@@ -29,6 +30,9 @@ jobs:
 
             - name: Iniciar o servidor de Aplicacao
               run: npm run server &
+
+            - name: Executar testes
+              run: npx cypress rub
 
             -name: Executar testes
              run: npx cypress run
